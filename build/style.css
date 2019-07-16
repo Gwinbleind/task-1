@@ -1,10 +1,50 @@
-/* IDEA: Это темы может быть так и надо? */
+/* IDEA: Это темы может быть так и надо? нашел вариант написания темы через :root */
 .theme {}
-.theme_color_project-default {}
-.theme_color_project-brand {}
-.theme_color_project-inverse {}
-.theme_color_project-warning {}
-.theme_color_megafon-brand {}
+.theme_color_project-default {
+  --color_default: #FFFFFF;
+  --color_accent: #005683;
+  --color_border: #000000;
+  --color-main: #000000;
+  --color-minor: rgba(0, 0, 0, 0.6);
+  --color-additional: rgba(0, 0, 0, 0.3);
+  --color-referal: #0070f0;
+}
+.theme_color_project-brand {
+  --color_default: #0070f0;
+  --color_accent: #FFFFFF;
+  --color_border: #FFFFFF;
+  --color-main: #FFFFFF;
+  --color-minor: rgba(255, 255, 255, 0.6);
+  --color-additional: rgba(255, 255, 255, 0.3);
+  --color-referal: #FFFFFF;
+}
+.theme_color_project-inverse {
+  --color_default: #000000;
+  --color_accent: #FFFFFF;
+  --color_border: #FFFFFF;
+  --color-main: #FFFFFF;
+  --color-minor: rgba(255, 255, 255, 0.6);
+  --color-additional: rgba(255, 255, 255, 0.3);
+  --color-referal: #0070f0;
+}
+.theme_color_project-warning {
+  --color_default: #FF9900;
+  --color_accent: #FFFFFF;
+  --color_border: #FFFFFF;
+  --color-main: #FFFFFF;
+  --color-minor: rgba(255, 255, 255, 0.6);
+  --color-additional: rgba(255, 255, 255, 0.3);
+  --color-referal: #FFF;
+}
+.theme_color_megafon-brand {
+  --color_default: #1FA55D;
+  --color_accent: #FFFFFF;
+  --color_border: #FFFFFF;
+  --color-main: #FFFFFF;
+  --color-minor: rgba(255, 255, 255, 0.6);
+  --color-additional: rgba(255, 255, 255, 0.3);
+  --color-referal: #FFF;
+}
 
 .theme_size_default {}
 
@@ -61,4 +101,4 @@
 .card__content-space-xxl {
   padding: 32px;
 }
-.card__footer
+.card__footer {}
