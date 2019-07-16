@@ -1,5 +1,17 @@
 /* IDEA: Это темы может быть так и надо? нашел вариант написания темы через :root */
-.theme {}
+.theme {
+  --xxxs: 2px;
+  --xxs: 4px;
+  --xs: 8px;
+  --s: 12px;
+  --m: 16px;
+  --l: 20px;
+  --xl: 24px;
+  --xxl: 32px;
+  --xxxl: 40px;
+  --xxxxl: 48px;
+  --xxxxxl: 72px;
+}
 .theme_color_project-default {
   --color_default: #FFFFFF;
   --color_accent: #005683;
@@ -60,24 +72,32 @@
   width: 1144px;
 }
 .container_space-xxxxl {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: var(xxxxl);
+  padding-bottom: var(xxxxl);
 }
 .container_space-xxxxxl {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: var(xxxxxl);
+  padding-bottom: var(xxxxxl);
 }
 .container_indent-xxl {
-  margin-bottom: 32px;
+  margin-bottom: var(xxl);
 }
-.container_indent-xxl {
-  margin-bottom: 48px;
+.container_indent-xxxxl {
+  margin-bottom: var(xxxxl);
 }
 /* IDEA: Элемент grid не понял до конца*/
 .grid {}
 .grid_12-cols {/* IDEA: потом придумаем что внутри */}
 .grid_10-cols {/* IDEA: потом придумаем что внутри */}
-
+.grid_col-gap-2-3 {
+  margin-right: 66%;
+}
+.grid_col-gap-full {
+  margin-right: 100%;
+}
+.grid_col-gap-half {
+  margin-right: 50%;
+}
 /* IDEA: Элемент fraction не понял модификаторы*/
 .fraction {}
 /* IDEA: Элемент card */
@@ -90,15 +110,31 @@
   text-align: center;
 }
 .card__content-space-m {
-  padding: 16px;
+  padding: var(m);
 }
 .card__content-space-l {
-  padding: 20px;
+  padding: var(l);
 }
 .card__content-space-xl {
-  padding: 24px;
+  padding: var(xl);
 }
 .card__content-space-xxl {
-  padding: 32px;
+  padding: var(xxl);
 }
-.card__footer {}
+.card__footer {/* IDEA: не ясно что должно быть внутри */}
+/* IDEA: Элемент form */
+.form {
+  border: var(--color_border);
+  background-color: var(--color_default);
+}
+.form__item {
+  border-bottom: var(--color_border);
+  margin-bottom: var(--xxxs);
+  /* IDEA: gbcfnm jcnfkmyst vjlbabrfnjhs 'nj ghzv gbgtw echfnmcz' */
+}
+.form__label {}
+.form__control {}
+.form__header {}
+.form__content {}
+.form__content-item {}
+.form__footer {}
