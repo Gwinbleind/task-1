@@ -1,0 +1,64 @@
+/* IDEA: Это темы может быть так и надо? */
+.theme {}
+.theme_color_project-default {}
+.theme_color_project-brand {}
+.theme_color_project-inverse {}
+.theme_color_project-warning {}
+.theme_color_megafon-brand {}
+
+.theme_size_default {}
+
+.theme_gap_small {}
+/* IDEA: Элемент контейнер */
+.container {
+  align-self: center;
+}
+.container_size-s {
+  width: 880px;
+}
+.container_size-m {
+  width: 1144px;
+}
+.container_space-xxxxl {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.container_space-xxxxxl {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.container_indent-xxl {
+  margin-bottom: 32px;
+}
+.container_indent-xxl {
+  margin-bottom: 48px;
+}
+/* IDEA: Элемент grid не понял до конца*/
+.grid {}
+.grid_12-cols {/* IDEA: потом придумаем что внутри */}
+.grid_10-cols {/* IDEA: потом придумаем что внутри */}
+
+/* IDEA: Элемент fraction не понял модификаторы*/
+.fraction {}
+/* IDEA: Элемент card */
+.card {/* IDEA: не ясно куда положить эти свойства border-all и view-default */
+  border: black;
+}
+.card__content {
+  display: inline-block; /* IDEA: возможно надо так */
+  vertical-align: bottom;
+  text-align: center;
+}
+.card__content-space-m {
+  padding: 16px;
+}
+.card__content-space-l {
+  padding: 20px;
+}
+.card__content-space-xl {
+  padding: 24px;
+}
+.card__content-space-xxl {
+  padding: 32px;
+}
+.card__footer
