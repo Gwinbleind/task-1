@@ -128,13 +128,224 @@
   background-color: var(--color_default);
 }
 .form__item {
-  border-bottom: var(--color_border);
+  border: 0;
+  border-bottom-color: var(--color_border);
   margin-bottom: var(--xxxs);
   /* IDEA: gbcfnm jcnfkmyst vjlbabrfnjhs 'nj ghzv gbgtw echfnmcz' */
 }
-.form__label {}
-.form__control {}
+.form__label {
+  width: 35%;
+}
+.form__control {
+  width: 35%;
+}
 .form__header {}
 .form__content {}
 .form__content-item {}
 .form__footer {}
+
+.informer {}
+.informer_distr-center {
+  text-align: center;
+}
+.informer_space-xl {
+  margin: var(--xl);
+}
+.informer_space-xxl {
+  margin: var(--xxl);
+}
+.list {}
+.list__item {
+  vertical-align: middle;
+  margin-top: var(--m);
+  padding-bottom: var(--s);
+  padding-left: var(--l);
+  padding-right: var(--l);
+  padding-top: var(--l);
+}
+.list__item_border-top {
+  border-top-color: var(--color_border);
+}
+.list__item_border-bot {
+  border-bottom-color: var(--color_border);
+}
+.list__item_indent-s {
+  margin-bottom: var(--s);
+}
+.list__item_indent-m {
+  margin-bottom: var(--m);
+}
+.list__item_indent-l {
+  margin-bottom: var(--l);
+}
+.list__item_indent-xl {
+  margin-bottom: var(--xl);
+}
+.icon-plus {
+  vertical-align: center;
+}
+.icon-plus__icon {
+  margin-left: var(--l);
+}
+.icon-plus__icon_indent-r-s {
+  margin-right: var(--s);
+}
+.icon-plus__icon_indent-r-m {
+  margin-right: var(--m);
+}
+.icon-plus__block {}
+
+.section {}
+.section_indent-b-xxl {
+  margin-bottom: var(--xxl);
+}
+.section_indent-b-xxxxl {
+  margin-bottom: var(--xxxxl);
+}
+.section_space-v-xxl {
+padding-bottom: var(--xxl);
+padding-top: var(--xxl);
+}
+.section_space-v-xxxxl {
+  padding-bottom: var(--xxxxl);
+  padding-top: var(--xxxxl);
+}
+/* IDEA: Блок Текста */
+.text {
+  text-align: center;
+}
+.text_size-s {
+  font-size: var(--s);
+  --word-s: 20px;
+  --word-m: 48px;
+  --word-l: 100px;
+  --word-h: 7px;
+}
+.text_size-m {
+  font-size: var(--m);
+  --word-s: 24px;
+  --word-m: 56px;
+  --word-l: 114px;
+  --word-h: 8px;
+}
+.text_size-l {
+  font-size: var(--l);
+  --word-s: 28px;
+  --word-m: 68px;
+  --word-l: 138px;
+  --word-h: 10px;
+}
+.text_size-xl {
+  font-size: var(--xl);
+  --word-s: 32px;
+  --word-m: 74px;
+  --word-l: 154px;
+  --word-h: 11px;
+}
+.text_size-xxl {
+  font-size: var(--xxl);
+  --word-s: 36px;
+  --word-m: 88px;
+  --word-l: 184px;
+  --word-h: 13px;
+}
+.text_type-h1 {
+  margin: 15px 0 21px;
+}
+.text_type-h2 {
+  margin: 48px 0 20px;
+}
+.text_type-h3 {
+  margin: 43px 0 0;
+}
+.text_type-p {
+  margin: 15px 0 21px;
+}
+.text__word {
+  display: inline-block;
+  height: var(--word-h);
+  background-color: var(--color-main);
+  /*background-color: black;*/
+}
+.text__word_width-s {
+  width: var(--word-s);
+}
+.text__word_width-m {
+  width: var(--word-m);
+}
+.text__word_width-l {
+  width: var(--word-l);
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+}
+.brand-logo {}
+.brand-logo_yota {
+  background-color: #00c0f8;
+}
+.brand-logo_mega {
+  background-color: #33c778;
+}
+.brand-logo_kcell {
+  background-color: #692b96;
+}
+.brand-logo_mts {
+  background-color: #f70000;
+}
+.brand-logo_size-xxs {
+  height: 24px;
+  width: 24px;
+}
+.brand-logo_size-xs {
+  height: 32px;
+  width: 32px;
+}
+.brand-logo_size-s {
+  height: 40px;
+  width: 40px;
+}
+.brand-logo_size-m {
+  height: 60px;
+  width: 60px;
+}
+.brand-logo_size-l {
+  height: 80px;
+  width: 80px;
+}
+
+.placeholder {
+  height: 72px;
+  width: 72px;
+  background-color: var(--color_main);
+}
+
+.button {
+  background-color: var(color_accent);
+  width: 100%;
+}
+.button_size-s {
+  height: 24px;
+  width: 200px;
+}
+.button_size-m {
+  height: 32px;
+  width: 200px;
+}
+.button_size-l {
+  height: 42px;
+  width: 200px;
+}
+.button_size-xl {
+  height: 56px;
+  width: 200px;
+}
+.button_size-xxl {
+  height: 64px;
+  width: 200px;
+}
+
+.image {
+
+}
