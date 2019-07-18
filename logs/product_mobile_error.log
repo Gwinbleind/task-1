@@ -1,0 +1,8 @@
+TypeError: template_engine__WEBPACK_IMPORTED_MODULE_0___default(...) is not a function
+    at eval (webpack-internal:///./static/index.js:18:70)
+    at Module../static/index.js (file:///opt/buildagent/work/e163812401825360/screenshots/static/Gwinbleind/build/template-engine.js:155:1)
+    at __webpack_require__ (file:///opt/buildagent/work/e163812401825360/screenshots/static/Gwinbleind/build/template-engine.js:20:30)
+    at Object.0 (file:///opt/buildagent/work/e163812401825360/screenshots/static/Gwinbleind/build/template-engine.js:221:18)
+    at __webpack_require__ (file:///opt/buildagent/work/e163812401825360/screenshots/static/Gwinbleind/build/template-engine.js:20:30)
+    at file:///opt/buildagent/work/e163812401825360/screenshots/static/Gwinbleind/build/template-engine.js:84:18
+    at file:///opt/buildagent/work/e163812401825360/screenshots/static/Gwinbleind/build/template-engine.js:87:10
