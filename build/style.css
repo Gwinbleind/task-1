@@ -11,51 +11,58 @@
   --xxxl: 40px;
   --xxxxl: 48px;
   --xxxxxl: 72px;
+  --img_black: "assets\images\image-placeholder-primary.svg";
+  --img_white: "assets\images\image-placeholder-inverse.svg";
 }
 .theme_color_project-default {
-  --color_default: #FFFFFF;
-  --color_accent: #005683;
-  --color_border: #000000;
-  --color-main: #000000;
-  --color-minor: rgba(0, 0, 0, 0.6);
-  --color-additional: rgba(0, 0, 0, 0.3);
-  --color-referal: #0070f0;
+  --color_default: #FFFFFF; /*фон*/
+  --color_accent: #005683; /*акцент*/
+  --color_border: #000000; /*бордер*/
+  --color_main: #000000; /*текст основной*/
+  --color_minor: rgba(0, 0, 0, 0.6); /*текст второстепенный*/
+  --color_additional: rgba(0, 0, 0, 0.3);/*текст дополнительный*/
+  --color_referal: #0070f0;/*текст ссылки*/
+  --img_ref: var(--img_black);
 }
 .theme_color_project-brand {
   --color_default: #0070f0;
   --color_accent: #FFFFFF;
   --color_border: #FFFFFF;
-  --color-main: #FFFFFF;
-  --color-minor: rgba(255, 255, 255, 0.6);
-  --color-additional: rgba(255, 255, 255, 0.3);
-  --color-referal: #FFFFFF;
+  --color_main: #FFFFFF;
+  --color_minor: rgba(255, 255, 255, 0.6);
+  --color_additional: rgba(255, 255, 255, 0.3);
+  --color_referal: #FFFFFF;
+  --img_ref: var(--img_white);
 }
 .theme_color_project-inverse {
   --color_default: #000000;
   --color_accent: #FFFFFF;
   --color_border: #FFFFFF;
-  --color-main: #FFFFFF;
-  --color-minor: rgba(255, 255, 255, 0.6);
-  --color-additional: rgba(255, 255, 255, 0.3);
-  --color-referal: #0070f0;
+  --color_main: #FFFFFF;
+  --color_minor: rgba(255, 255, 255, 0.6);
+  --color_additional: rgba(255, 255, 255, 0.3);
+  --color_referal: #0070f0;
+  --img_ref: var(--img_white);
 }
 .theme_color_project-warning {
   --color_default: #FF9900;
   --color_accent: #FFFFFF;
   --color_border: #FFFFFF;
-  --color-main: #FFFFFF;
-  --color-minor: rgba(255, 255, 255, 0.6);
-  --color-additional: rgba(255, 255, 255, 0.3);
-  --color-referal: #FFF;
+  --color_main: #FFFFFF;
+  --color_minor: rgba(255, 255, 255, 0.6);
+  --color_additional: rgba(255, 255, 255, 0.3);
+  --color_referal: #FFF;
+  --img_ref: var(--img_black);
 }
 .theme_color_megafon-brand {
   --color_default: #1FA55D;
   --color_accent: #FFFFFF;
   --color_border: #FFFFFF;
-  --color-main: #FFFFFF;
-  --color-minor: rgba(255, 255, 255, 0.6);
-  --color-additional: rgba(255, 255, 255, 0.3);
-  --color-referal: #FFF;
+  --color_main: #FFFFFF;
+  --color_minor: rgba(255, 255, 255, 0.6);
+  --color_additional: rgba(255, 255, 255, 0.3);
+  --color_referal: #FFF;
+  --img_ref: var(--img_black);
 }
 
 .theme_size_default {}
@@ -264,7 +271,7 @@ padding-top: var(--xxl);
 .text__word {
   display: inline-block;
   height: var(--word-h);
-  background-color: var(--color-main);
+  background-color: var(--color_main);
   /*background-color: black;*/
 }
 .text__word_width-s {
@@ -346,6 +353,25 @@ padding-top: var(--xxl);
   width: 200px;
 }
 
-.image {
+.input {
+  width: 100%;
+}
+.input_size-s {
+  height: 24px;
+}
+.input_size-m {
+  height: 32px;
+}
+.input_size-l {
+  height: 42px;
+}
+.input_size-xl {
+  height: 56px;
+}
+.input_size-xxl {
+  height: 64px;
+}
 
+.image {
+  background-color: var(color_default);
 }
