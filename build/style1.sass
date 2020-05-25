@@ -1,0 +1,296 @@
+// IDEA: Это темы может быть так и надо? нашел вариант написания темы через :root
+.theme
+   $xxxs: 2px
+   $xxs: 4px
+   $xs: 8px
+   $s: 12px
+   $m: 16px
+   $l: 20px
+   $xl: 24px
+   $xxl: 32px
+   $xxxl: 40px
+   $xxxxl: 48px
+   $xxxxxl: 72px
+   $img_black: "assets\images\image-placeholder-primary.svg"
+   $img_white: "assets\images\image-placeholder-inverse.svg"
+   &_color
+      &_project-default
+         $color_default: #FFFFFF //фон
+         $color_accent: #005683 //акцент
+         $color_border: #000000 //бордер
+         $color_main: #000000 //текст основной
+         $color_minor: rgba(0, 0, 0, 0.6) //текст второстепенный
+         $color_additional: rgba(0, 0, 0, 0.3) //текст дополнительный
+         $color_referal: #0070f0 //текст ссылки
+         $img_ref: $img_black
+      &_project-brand
+         $color_default: #0070f0
+         $color_accent: #FFFFFF
+         $color_border: #FFFFFF
+         $color_main: #FFFFFF
+         $color_minor: rgba(255, 255, 255, 0.6)
+         $color_additional: rgba(255, 255, 255, 0.3)
+         $color_referal: #FFFFFF
+         $img_ref: $img_white
+      &_project-inverse
+         $color_default: #000000
+         $color_accent: #FFFFFF
+         $color_border: #FFFFFF
+         $color_main: #FFFFFF
+         $color_minor: rgba(255, 255, 255, 0.6)
+         $color_additional: rgba(255, 255, 255, 0.3)
+         $color_referal: #0070f0
+         $img_ref: $img_white
+      &_project-warning
+         $color_default: #FF9900
+         $color_accent: #FFFFFF
+         $color_border: #FFFFFF
+         $color_main: #FFFFFF
+         $color_minor: rgba(255, 255, 255, 0.6)
+         $color_additional: rgba(255, 255, 255, 0.3)
+         $color_referal: #FFF
+         $img_ref: $img_black
+      &_megafon-brand
+         $color_default: #1FA55D
+         $color_accent: #FFFFFF
+         $color_border: #FFFFFF
+         $color_main: #FFFFFF
+         $color_minor: rgba(255, 255, 255, 0.6)
+         $color_additional: rgba(255, 255, 255, 0.3)
+         $color_referal: #FFF
+         $img_ref: $img_black
+
+.theme_size_default
+
+.theme_gap_small
+// IDEA: Элемент контейнер 
+.container 
+   align-self: center
+.container_size-s 
+   width: 880px
+.container_size-m 
+   width: 1144px
+.container_space-xxxxl 
+   padding-top: $xxxxl
+   padding-bottom: $xxxxl
+.container_space-xxxxxl 
+   padding-top: $xxxxxl
+   padding-bottom: $xxxxxl
+.container_indent-xxl 
+   margin-bottom: $xxl
+.container_indent-xxxxl 
+   margin-bottom: $xxxxl
+// IDEA: Элемент grid не понял до конца
+.grid
+.grid_12-cols // IDEA: потом придумаем что внутри 
+.grid_10-cols // IDEA: потом придумаем что внутри 
+.grid_col-gap-2-3 
+   margin-right: 66%
+.grid_col-gap-full 
+   margin-right: 100%
+.grid_col-gap-half 
+   margin-right: 50%
+// IDEA: Элемент fraction не понял модификаторы
+.fraction
+// IDEA: Элемент card 
+.card // IDEA: не ясно куда положить эти свойства border-all и view-default 
+   border: black
+.card__content 
+   display: inline-block // IDEA: возможно надо так 
+   vertical-align: bottom
+   text-align: center
+.card__content-space-m 
+   padding: $m
+.card__content-space-l 
+   padding: $l
+.card__content-space-xl 
+   padding: $xl
+.card__content-space-xxl 
+   padding: $xxl
+.card__footer // IDEA: не ясно что должно быть внутри 
+// IDEA: Элемент form 
+.form 
+   border: $color_border
+   background-color: $color_default
+.form__item 
+   border: 0
+   border-bottom-color: $color_border
+   margin-bottom: $xxxs
+// IDEA: gbcfnm jcnfkmyst vjlbabrfnjhs 'nj ghzv gbgtw echfnmcz' 
+.form__label 
+   width: 35%
+.form__control 
+   width: 35%
+.form__header
+.form__content
+.form__content-item
+.form__footer
+
+.informer
+.informer_distr-center 
+   text-align: center
+.informer_space-xl 
+   margin: $xl
+.informer_space-xxl 
+   margin: $xxl
+.list
+.list__item 
+   vertical-align: middle
+   margin-top: $m
+   padding-bottom: $s
+   padding-left: $l
+   padding-right: $l
+   padding-top: $l
+.list__item_border-top 
+   border-top-color: $color_border
+.list__item_border-bot 
+   border-bottom-color: $color_border
+.list__item_indent-s 
+   margin-bottom: $s
+.list__item_indent-m 
+   margin-bottom: $m
+.list__item_indent-l 
+   margin-bottom: $l
+.list__item_indent-xl 
+   margin-bottom: $xl
+.icon-plus 
+   vertical-align: center
+.icon-plus__icon 
+   margin-left: $l
+.icon-plus__icon_indent-r-s 
+   margin-right: $s
+.icon-plus__icon_indent-r-m 
+   margin-right: $m
+.icon-plus__block
+
+.section
+.section_indent-b-xxl 
+   margin-bottom: $xxl
+.section_indent-b-xxxxl 
+   margin-bottom: $xxxxl
+.section_space-v-xxl 
+   padding-bottom: $xxl
+   padding-top: $xxl
+.section_space-v-xxxxl 
+   padding-bottom: $xxxxl
+   padding-top: $xxxxl
+// IDEA: Блок Текста 
+.text 
+   text-align: center
+.text_size-s 
+   font-size: $s
+   $word-s: 20px
+   $word-m: 48px
+   $word-l: 100px
+   $word-h: 7px
+.text_size-m 
+   font-size: $m
+   $word-s: 24px
+   $word-m: 56px
+   $word-l: 114px
+   $word-h: 8px
+.text_size-l 
+   font-size: $l
+   $word-s: 28px
+   $word-m: 68px
+   $word-l: 138px
+   $word-h: 10px
+.text_size-xl 
+   font-size: $xl
+   $word-s: 32px
+   $word-m: 74px
+   $word-l: 154px
+   $word-h: 11px
+.text_size-xxl 
+   font-size: $xxl
+   $word-s: 36px
+   $word-m: 88px
+   $word-l: 184px
+   $word-h: 13px
+.text_type-h1 
+   margin: 15px 0 21px
+.text_type-h2 
+   margin: 48px 0 20px
+.text_type-h3 
+   margin: 43px 0 0
+.text_type-p 
+   margin: 15px 0 21px
+.text__word 
+   display: inline-block
+   height: $word-h
+   background-color: $color_main
+//background-color: black
+.text__word_width-s 
+   width: $word-s
+.text__word_width-m 
+   width: $word-m
+.text__word_width-l 
+   width: $word-l
+
+.avatar 
+   height: 60px
+   width: 60px
+.brand-logo
+.brand-logo_yota 
+   background-color: #00c0f8
+.brand-logo_mega 
+   background-color: #33c778
+.brand-logo_kcell 
+   background-color: #692b96
+.brand-logo_mts 
+   background-color: #f70000
+.brand-logo_size-xxs 
+   height: 24px
+   width: 24px
+.brand-logo_size-xs 
+   height: 32px
+   width: 32px
+.brand-logo_size-s 
+   height: 40px
+   width: 40px
+.brand-logo_size-m 
+   height: 60px
+   width: 60px
+.brand-logo_size-l 
+   height: 80px
+   width: 80px
+
+.placeholder 
+   height: 72px
+   width: 72px
+   background-color: $color_main
+
+.button 
+   background-color: $color_accent
+   width: 100%
+.button_size-s 
+   height: 24px
+   width: 200px
+.button_size-m 
+   height: 32px
+   width: 200px
+.button_size-l 
+   height: 42px
+   width: 200px
+.button_size-xl 
+   height: 56px
+   width: 200px
+.button_size-xxl 
+   height: 64px
+   width: 200px
+
+.input 
+   width: 100%
+.input_size-s 
+   height: 24px
+.input_size-m 
+   height: 32px
+.input_size-l 
+   height: 42px
+.input_size-xl 
+   height: 56px
+.input_size-xxl 
+   height: 64px
+
+.image 
+   background-color: $color_default
